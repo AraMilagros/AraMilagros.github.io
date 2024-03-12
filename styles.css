@@ -1,0 +1,208 @@
+:root {
+    --azul: #0A3871;
+    --gris: #ADB5BD;
+    --bg-aside: white;
+    --bg-main: #E9ECF8;
+}
+
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* border:2px solid red; */
+    height: 100vh;
+
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-main);
+}
+
+
+main {
+    /* border: 5px solid yellow; */
+    height: 90%;
+    /* width: 90%; */
+    display: flex;
+}
+
+#textareaInput {
+    background: none;
+}
+
+#container-logo,
+#transcriptor,
+#aside {
+    /* border: 2px solid red; */
+    padding: 0 4em;
+
+}
+
+#container-logo {
+    flex: .5;
+    padding: 2em;
+    text-align: end;
+}
+
+#transcriptor {
+    flex: 2;
+
+    /* border: 4px solid green; */
+    padding-top: 7em;
+    padding-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#container-bottom>i {
+    margin-right: 10px;
+}
+
+/* #container-bottom{
+    border:5px solid black;
+} */
+
+#buttons {
+    /* border:2px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 12px 60px;
+    border-radius: 10px;
+}
+
+#btnEncriptar {
+    background: var(--azul);
+    color: white;
+}
+
+#btnDesencriptar {
+    background: #CED4DA;
+    color: var(--azul);
+}
+
+#aside {
+    flex: 1;
+    width: 90%;
+
+}
+
+#container-translader {
+    display: flex;
+    background: var(--bg-aside);
+    height: 100%;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    font-size: large;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+#container-translader>input {
+    width: 80%;
+    align-self: center;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+#translader-p {
+    width: 16em;
+    margin: 0 1.5em;
+}
+
+#container-none {
+    /* display: none; */
+    /* border:4px solid red; */
+    /* display: block; */
+    background: var(--bg-aside);
+    padding-top: 7em;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+
+#imgIcon {
+    /* border:2px solid green; */
+    width: 18em;
+    margin: 15px;
+}
+
+#container-txt {
+    text-align: center;
+    /* border:2px solid green; */
+}
+
+#aside .oculto {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    #container-logo {
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    main {
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    #transcriptor {
+        border: none;
+        padding-top: 1em;
+        padding-left: 3em;
+        padding-bottom: 1em;
+
+    }
+
+    #imgIcon {
+        display: none;
+    }
+
+    #aside {
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    #container-none {
+        padding: 0;
+        height: max-content;
+        border-radius: 10px;
+    }
+
+    #container-txt {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    #container-logo {
+        padding-left: 2em;
+        /* text-align: ; */
+    }
+
+    #transcriptor{
+        width: 100vw;
+    }
+
+    #buttons{
+        flex-direction: column;
+    }
+    .btn{
+        margin: .5em;
+    }
+
+}
