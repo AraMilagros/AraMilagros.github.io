@@ -32,6 +32,7 @@ main {
 
 #textareaInput {
     background: none;
+     text-transform: lowercase;
 }
 
 #container-logo,
